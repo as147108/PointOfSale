@@ -9,7 +9,7 @@
       　2.manager：(1)點餐(2)查詢訂單(3)更改名稱<非帳號>、密碼(4)對餐點資料進行CRUD(5)對權限為employee的帳號進行CRUD<br>
       　3.employee：僅有點餐與查詢訂單功能<br>
         <br>
-        ![image](https://github.com/as147108/PointOfSale/blob/master/Images/Login.PNG?raw=true)<br>
+        ![image](https://github.com/as147108/PointOfSale/blob/master/Images/Login.PNG)<br>
         <br>
       **帳號設定**：<br>
         <br>
