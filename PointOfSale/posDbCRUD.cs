@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Collections;
 using System.Data.SqlClient;
-
+using System.IO;
 
 namespace PointOfSale
 {
@@ -23,12 +23,25 @@ namespace PointOfSale
         public posDbCRUD()
         {
             //連接字串
+
+            //SQL Server
+            //scsb = new SqlConnectionStringBuilder();
+            //scsb.DataSource = @".\SQLEXPRESS";
+            //scsb.InitialCatalog = "posDB";
+            //scsb.IntegratedSecurity = true;
+            //posDBconnectionString = scsb.ToString();
+            //con = new SqlConnection(posDBconnectionString);
+            //localDB
+            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string relativePath = @".\posDB.mdf";
+            string absolutePath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
             scsb = new SqlConnectionStringBuilder();
-            scsb.DataSource = @".";
-            scsb.InitialCatalog = "posDB";
+            scsb.DataSource = @"(LocalDB)\MSSQLLocalDB";
+            scsb.AttachDBFilename = absolutePath;
             scsb.IntegratedSecurity = true;
             posDBconnectionString = scsb.ToString();
             con = new SqlConnection(posDBconnectionString);
+
             dataInitial();
         }
         #region Initial
