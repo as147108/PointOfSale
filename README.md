@@ -21,7 +21,7 @@
         <br>
       **員工管理**：<br>
         <br>
-        ![image](https://github.com/as147108/PointOfSale/blob/master/Images/SettingEmployeepng)<br>
+        ![image](https://github.com/as147108/PointOfSale/blob/master/Images/SettingEmployeepng.png)<br>
         <br>
 - [x] **點餐**：<br>
       點選餐點後及時顯示總價並能看到已點列表，已點選餐點能隨時刪除，送出訂單後能在訂單頁面查詢。<br>
