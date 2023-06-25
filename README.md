@@ -36,5 +36,5 @@
 - [x] **訂單查詢**：<br>
       以日期查詢已完成餐點<br>
       <br>
-       ![image](https://github.com/as147108/PointOfSale/blob/master/Image/OrderSearch.png)<br>
+       ![image](https://github.com/as147108/PointOfSale/blob/master/Images/OrderSearch.png)<br>
       <br>
